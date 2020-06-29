@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The coronavirus web</title>
+    {% load static %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css' %}" >
+    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
+    <script>
+        $(document).ready(function(){
+            $('.tabs').tabs();
+        });
+    </script>
+</head>
+<body class="#01579b light-blue darken-4">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">Coronavirus</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li class="active"><a href="{% url 'inicio' %}">Formulario</a></li>
+            <li><a href="{% url 'contacto' %}">Contacto</a></li>
+            <li><a href="{% url 'hlascondes' %}">Las Condes</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        
+        <form>
+            <h1><label for="nombre"> Ingrese su nombre y su correo electrónico: </label></h1>
+            <input type="text" placeholder="Escribe tu nombre" name="nombre"> 
+            <input type="email" placeholder="Escribe tu Email" name="" id="">
+            <br><br>
+            <label for="sexo">Seleccione su sexo</label>
+            <br><br>
+            <input type="radio" name="" id="">Hombre
+            <input type="radio" name="" id="">Mujer    
+            <input type="radio" name="" id="">Otro
+            <select name="" id="">
+                <option value="Vitacura">Vitacura</option>
+                <option value="La Reina">La Reina</option>
+                <option value="Providencia">Providencia</option>
+                <option value="Las Condes">Las Condes</option>
+                <option value="Santiago Centro">Santiago Centro</option>
+            </select>
+            <br><br>
+            <input type="submit">    
+        </form>
+    </div>
+</body>
+
+
+
+</html>
+
