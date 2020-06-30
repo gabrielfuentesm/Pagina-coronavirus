@@ -28,23 +28,37 @@
         
         <form>
             <h1><label for="nombre"> Ingrese su nombre y su correo electrónico: </label></h1>
-            <input type="text" placeholder="Escribe tu nombre" name="nombre"> 
+            <input type="text" placeholder="Escribe tu nombre" name="nombre1"> 
             <input type="email" placeholder="Escribe tu Email" name="" id="">
+            <input type="text" placeholder="Escribe tu edad" name="edad"> 
+            <input type="text" placeholder="¿Tienes fiebre?" name="fiebre"> 
+            <input type="text" placeholder="¿Tienes tos seca?" name="tos"> 
+            <input type="text" placeholder="¿Has tenido algún cansacio inusual?" name="cansancio"> 
+            <input type="text" placeholder="¿Te ha faltado el aire?" name="aire"> 
+            <input type="text" placeholder="¿Has sentido molestias/dolor en el pecho?" name="pecho"> 
+            <input type="text" placeholder="¿Has sentido dolor de cabeza?" name="cabeza"> 
+            <input type="text" placeholder="¿Has tenido dificultades para respirar?" name="respirar"> 
+
+            
             <br><br>
             <label for="sexo">Seleccione su sexo</label>
             <br><br>
-            <input type="radio" name="" id="">Hombre
-            <input type="radio" name="" id="">Mujer    
-            <input type="radio" name="" id="">Otro
-            <select name="" id="">
+            <select class="browser-default">
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+                <option value="otro">Otro</option>
+            </select>
+            <br><br>
+            <input placeholder="Ingrese su comuna" name="">
+            <select class="browser-default">
                 <option value="Vitacura">Vitacura</option>
                 <option value="La Reina">La Reina</option>
                 <option value="Providencia">Providencia</option>
                 <option value="Las Condes">Las Condes</option>
                 <option value="Santiago Centro">Santiago Centro</option>
             </select>
-            <br><br>
-            <input type="submit">    
+            <br><br>  
+            <a class="waves-effect waves-light btn" href="{% url 'formulario2' %}">Siguiente</a>
         </form>
     </div>
 </body>

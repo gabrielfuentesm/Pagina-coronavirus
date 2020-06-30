@@ -1,7 +1,7 @@
 from django.db import models
 
 #class enfermedades(models.Model):
-    #Edad =
+    #edad = 
     #cancer =
     #diabetes =
 

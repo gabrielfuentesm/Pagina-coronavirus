@@ -18,5 +18,6 @@ def Lascondes(request):
     context = {"Place": ordcompetidores, "numcompetidores": len(ordcompetidores)}
     return render(request, "hlascondes.html", context)
 
-
-
+def formulario2(request):
+    return render(request, "formulario2.html")
+    
