@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <title>The coronavirus web</title>
     {% load static %}
@@ -19,8 +19,10 @@
             <a href="#" class="brand-logo center">Coronavirus</a>
             <ul id="nav-mobile" class="left hide-on-med-and-down">
             <li class="active"><a href="{% url 'inicio' %}">Formulario</a></li>
-            <li><a href="{% url 'contacto' %}">Contacto</a></li>
+            <li><a href="{% url 'contacto' %}">Información</a></li>
             <li><a href="{% url 'hlascondes' %}">Las Condes</a></li>
+            <li><a href="{% url 'hvitacura' %}">Vitacura</a></li>
+            <li><a href="{% url 'hbarnechea' %}">Lo Barnechea</a></li>
             </ul>
         </div>
     </nav>
@@ -37,7 +39,22 @@
             <input type="text" placeholder="¿Te ha faltado el aire?" name="aire"> 
             <input type="text" placeholder="¿Has sentido molestias/dolor en el pecho?" name="pecho"> 
             <input type="text" placeholder="¿Has sentido dolor de cabeza?" name="cabeza"> 
-            <input type="text" placeholder="¿Has tenido dificultades para respirar?" name="respirar"> 
+            <input type="text" placeholder="¿Has tenido dificultades para respirar?" name="respirar">
+            <h0><label for="nombre"> ¿Tienes fiebre? </label></h0>
+            <form action="#">
+                <p>
+                  <label>
+                    <input name="group1" type="radio" checked />
+                    <span>Sí</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input name="group1" type="radio" />
+                    <span>No</span>
+                  </label>
+                </p>
+            </form> 
 
             
             <br><br>
@@ -55,7 +72,7 @@
                 <option value="La Reina">La Reina</option>
                 <option value="Providencia">Providencia</option>
                 <option value="Las Condes">Las Condes</option>
-                <option value="Santiago Centro">Santiago Centro</option>
+                <option value="Santiago Centro">Lo Barnechea</option>
             </select>
             <br><br>  
             <a class="waves-effect waves-light btn" href="{% url 'formulario2' %}">Siguiente</a>

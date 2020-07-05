@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='es' style='height: 200%;'>
 <head>
-    <title>Coronavirus</title>
+    <title>The coronavirus web</title>
     {% load static %}
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css' %}" >
@@ -20,8 +20,10 @@
             <a href="#" class="brand-logo center">Coronavirus</a>
             <ul id="nav-mobile" class="left hide-on-med-and-down">
             <li><a href="{% url 'inicio' %}">Formulario</a></li>
-            <li class="active"><a href="{% url 'contacto' %}">Contacto</a></li>
+            <li class="active"><a href="{% url 'contacto' %}">Información</a></li>
             <li><a href="{% url 'hlascondes' %}">Las Condes</a></li>
+            <li><a href="{% url 'hvitacura' %}">Vitacura</a></li>
+            <li><a href="{% url 'hbarnechea' %}">Lo Barnechea</a></li>
             </ul>
         </div>
     </nav>
@@ -42,27 +44,7 @@
                     </div>
                     <div class="card-content grey lighten-4">
                         <div id="tab1">
-                            <h6 style="text-align: center;">
-                                <ul>
-                                    <table>
-                                        <thead>
-                                          <tr>
-                                              <th>Numeración</th>
-                                              <th>Centro médico</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>                          
-                                          {% for i in Place%}
-                                          <tr>
-                                            <td>{{forloop.counter}}</td>
-                                            <td>{{i}}</td>  
-                                            <td><a class="waves-effect waves-light btn">Ubicación</a></td>                          
-                                          </tr>                         
-                                          {%endfor%}                        
-                                        </tbody>
-                                      </table>
-                                </ul>
-                            </h6>
+                            XD
                         </div>
                         <div id="tab2">@hola</div>
                         <div id="tab3">111222333444</div>
